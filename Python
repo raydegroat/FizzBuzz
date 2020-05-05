@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# Takes an integer n and tests every integer from 1 to n 
+# to see if it is divisible by 3 "Fizz" or 4 "Buzz" or both "FizzBuzz."
+n = int(input('Enter a positive integer: '))
+i = 1
+print(f'You entered {n}')
+
+while i <= n:
+    if (i%3 == 0 and i%4 == 0): #FizzBuzz!
+        print(f'{i} FizzBuzz')
+    elif (i%3 == 0 or i%4 == 0): # Fizz or Buzz
+        if(i%3 == 0): #Fizz!
+            print(f'{i} Fizz')
+        elif(i%4 == 0): #Buzz!
+            print(f'{i} Buzz')
+    i += 1
